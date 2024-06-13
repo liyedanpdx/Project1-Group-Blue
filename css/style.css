@@ -1,0 +1,51 @@
+@import url(../css/root.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* overwrite bootstrap css */
+/* Header section start */
+.btn-white{
+    background-color: var(--white);
+    color: var(--main-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--main-button-color);
+}
+.nav-color{
+    background-color: #1A2E38;
+}
+.navbar-nav, .navbar-brand, .nav-link, .nav-link.active{
+    color: #fff!important;
+}
+/* Header section finish */
+
+/* Header responsive start*/
+@media (max-width: 575.98px) {
+    .nav-color{
+        padding-bottom: 20px;
+    }
+    .navbar-brand{
+        width: 50%;
+    }
+}
+@media (max-width: 1199.98px) { 
+    .nav-color{
+        padding-bottom: 0;
+    }
+    .navbar-brand{
+        width: 20%;
+    }
+}
+@media (max-width: 1399.98px) { 
+    .nav-color{
+        padding-bottom: 0;
+    }
+    .navbar-brand{
+        width: 20%;
+    }
+}
+/* Header responsive finish */
