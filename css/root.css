@@ -6,3 +6,15 @@
     --light-gray: #757576;
     --main-button-color: #03B1F4;
 }
+@font-face {
+    font-family: Bodoni Moda;
+    src: url(../assets/Fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Bodoni Moda-Italic;
+    src: url(../assets/Fonts/Bodoni_Moda/BodoniModa-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: open-sans-regular;
+    src: url(../assets/Fonts/Open_Sans/OpenSans-Regular.ttf);
+}
