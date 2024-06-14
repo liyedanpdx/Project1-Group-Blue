@@ -50,7 +50,8 @@
 }
 /* Header responsive finish */
 
-/* swimming program start */
+
+
 
 
 /* Footer */
@@ -142,3 +143,50 @@ footer .contacts div[class^="col"] {
 footer #logos {
     list-style-type: none;
 }
+
+
+/* Swimming Lessons Part Start */
+.swimmng-les-banner-part{
+    background-image: url(../assets/images/which-lesson-is-best.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swimmng-les-banner-part h1{
+    font-family: Bodoni Moda;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white);
+    padding: 200px 0;
+}
+
+@media (max-width: 991.98px) {
+    .swimmng-les-banner-part h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .swimmng-les-banner-part h1{
+        font-size: 30px;
+    }
+}
+.swimming-les-main-header h2{
+    font-family: Bodoni Moda;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.swimming-les-main-content{
+    font-family: open-sans-regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.swimming-les-main-content p a{
+    text-decoration-color: var(--main-button-color);
+    color: var(--main-button-color);
+}
+
+/* Swimming Lessons Part End */
+
