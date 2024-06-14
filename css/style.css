@@ -34,7 +34,7 @@
 }
 @media (max-width: 1199.98px) { 
     .nav-color{
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     .navbar-brand{
         width: 20%;
@@ -42,13 +42,15 @@
 }
 @media (max-width: 1399.98px) { 
     .nav-color{
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     .navbar-brand{
         width: 20%;
     }
 }
 /* Header responsive finish */
+
+/* swimming program start */
 
 
 /* Footer */
