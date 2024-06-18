@@ -190,3 +190,50 @@ footer #logos {
 
 /* Swimming Lessons Part End */
 
+/* Swimming Program part start */
+.swimmng-pro-banner-part{
+    background-image: url(../assets/images//summer-swim-camps.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swimmng-pro-banner-part h1{
+    font-family: Bodoni Moda;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white);
+    padding: 200px 0;
+}
+@media (max-width: 991.98px) {
+    .swimmng-pro-banner-part h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .swimmng-pro-banner-part h1{
+        font-size: 30px;
+    }
+}
+
+.swimming-pro-main-header h2{
+    font-family: Bodoni Moda;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.swimming-pro-main-content{
+    font-family: open-sans-regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.swimming-pro-main-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+.swimming-pro-main-content ul li a{
+    text-decoration-color: var(--main-button-color);
+    color: var(--main-button-color);
+}
+/* Swimming Program part end */
