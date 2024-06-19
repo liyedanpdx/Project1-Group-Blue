@@ -31,7 +31,7 @@
                             <a class="nav-link" href="swimmingLessons.html">Swimming Lessons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Swim Programs</a>
+                            <a class="nav-link" href="swimmingProgram.html">Swim Programs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Adult Programs</a>
@@ -55,7 +55,8 @@
                         </li>
                     </ul>
                     <div class="signin-signup">
-                        <a href="#" class="btn-white text-decoration-none">Register / Signin</a>
+                        <a href="#" class="btn-white text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#regSigin">Register / Signin</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +76,8 @@
                     </div>
                     <div class="swimming-les-main-content">
                         <h5>Private Swim Lessons</h5>
-                        <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months
+                        <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages
+                            three months
                             through adult.
                             Private swim lessons are
                             the best option for accelerated learning. Each lesson will allow our instructors to build on
@@ -85,19 +87,23 @@
                             face into the water to refining your stroke technique, private lessons will offer the
                             highest rate of
                             progress.
-                            <a href="#">Learn more here!</a></p>
+                            <a href="#">Learn more here!</a>
+                        </p>
 
                         <h5>Semi-Private Swim Lessons</h5>
-                        <p>At Splashes, our <a href="">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity to
+                        <p>At Splashes, our <a href="">semi-private swim lessons</a> offer students ages 2.5 to 13 the
+                            opportunity to
                             interact with another student of a similar age and ability while still receiving personal
                             attention. Whether you would like us to pair your child with another student of similar age
                             and ability or would like to take lessons with a friend or sibling, our semi-private lessons
                             are a cost effective option. Students also have the opportunity to observe one another in
                             the lesson.
-                            <a href="#">Learn more here!</a></p>
+                            <a href="#">Learn more here!</a>
+                        </p>
 
                         <h5>Parent & Me Lessons</h5>
-                        <p>Our <a href="#">Parent and Me swimming lessons</a> (also known as "Mommy and Me" or "Daddy and Me" classes)
+                        <p>Our <a href="#">Parent and Me swimming lessons</a> (also known as "Mommy and Me" or "Daddy
+                            and Me" classes)
                             gives parents the opportunity to
                             be hands-on with their little one while our instructors facilitate the learning process
                             between you and your child. These lessons provide a fun and relaxed environment for you and
@@ -107,7 +113,8 @@
 
                         <h5>Stroke Clinic
                         </h5>
-                        <p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their swimming techniques
+                        <p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their
+                            swimming techniques
                             while in a group setting. Our Stroke
                             Clinic classes place emphasis on proper technique over speed and prepare students for swim
                             team.
@@ -115,16 +122,19 @@
                             40 minute classes. A strong technical foundation will ensure that students' progress much
                             faster when the time comes for them to work on speed. Our stroke clinics are exciting and
                             fast paced, where each student will receive a great workout.
-                            <a href="#">Learn more here!</a></p>
+                            <a href="#">Learn more here!</a>
+                        </p>
 
                         <h5>Adult Swim Lessons</h5>
                         <p>It is never too late to learn how to swim! Whether you are looking to learn the basics or
                             improve your technique to use swimming as
                             a form of exercise, our trained instructors will tailor each lesson to fit your individual
                             needs. At Splashes, our adult lessons are geared for swimmers ages 13 and older. From
-                            beginners to advanced, our <a href="#">adult swimming lessons</a> are a great option for those looking to
+                            beginners to advanced, our <a href="#">adult swimming lessons</a> are a great option for
+                            those looking to
                             conquer their fear of the water or who are looking to become stronger swimmers.
-                            <a href="#">Learn more here!</a></p>
+                            <a href="#">Learn more here!</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -135,7 +145,7 @@
         <div id="splashes" class="d-flex justify-content-center align-items-center">
             <img src="assets/images/wave-small.png" alt="wave-small">
         </div>
-        
+
         <div class="row">
             <div class="col-xl-6 text-center mb-3">
                 <a href="#" class="page_link p-2">About</a>
@@ -155,7 +165,7 @@
                 <a href="#" class="fa fa-youtube-play"></a>
             </div>
         </div>
-        
+
         <div class="container contacts">
             <hr>
             <div class="row justify-content-center text-center">
@@ -206,7 +216,55 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal-section">
+        <div class="modal fade" id="regSigin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-img">
+                <img src="./assets/Graphics/shark-full.png" alt="modal-img" class="img-fluid">
+            </div>
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title mx-auto fs-5" id="exampleModalLabel">SIGN IN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <label for="validationCustom01" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="validationCustom01" value=""
+                                    placeholder="Your Email" required>
+                                <div class="invalid-feedback">
+                                    Check your email!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom02" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="validationCustom02" value=""
+                                    placeholder="Your Password" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid password.
+                                </div>
+                                <div class="col-md-12 text-end">
+                                    <a href="#">Forget Password?</a>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <button type="submit" class="btn btn-primary btn-transparent w-100">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <button type="button" class="btn btn-primary btn-transparent w-100">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
