@@ -33,36 +33,121 @@
     color: var(--main-button-color);
 }
 .nav-color{
-    background-color: #1A2E38;
+    background-color: var(--main-color);
 }
 .navbar-nav, .navbar-brand, .nav-link, .nav-link.active{
     color: #fff!important;
 }
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Header section finish */
 
+
 /* Header responsive start*/
-@media (max-width: 575.98px) {
-    .nav-color{
-        padding-bottom: 20px;
-    }
-    .navbar-brand{
-        width: 50%;
-    }
+/* Navbar styles */
+.dropdown-header {
+font-weight: bold;
+margin-bottom: 5px;
+color: black;
+font-size: 15px;
 }
+
+/* Wrap Text for dropdown iteams */ 
+.dropdown-item {
+font-weight: 500;
+white-space: normal; /* Allow text to wrap */
+word-wrap: break-word; /* Break long words to prevent overflow */
+color: var(--main-button-color);
+}
+
+/* Change the hover on color to white | font weight */
+.dropdown-item:hover {
+    background-color:var(--white); /* Change background color to white on hover */
+    font-weight: 600;
+    color: var(--main-button-color);
+}
+
+/* Background color */
+.navbar-nav div[class^="col"] {
+padding-bottom: 20px;
+}
+
+/* Change Nav Bar to White */
+.navbar-nav .dropdown-menu {
+background-color: var(--white);
+padding:20px;
+margin: -2px;
+}
+
+/* Override fluid @mixin img-fluid max-width: 100%; */
+.navbar-brand img {
+max-width: 250px; /* Adjust the max-width as needed */
+height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
+
+/* Set the border color to transparent | set toggler icon to orange */
+.navbar-toggler {
+border-color: transparent;
+}
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff9700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Set the arrow to disapear */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* Change the background color of navbar options to white on hover */
+/* .navbar-nav .nav-link:hover {
+    background-color: var(--white) !important;
+    color: var(--main-color) !important;
+} */
+
+/* Media queries for smaller screens */
+@media (min-width: 1200px) {
+    .navbar-nav .dropdown-menu {
+        width: 80vw; /* 80% of the viewport width */
+        transform: translateX(-60%); /* Center the dropdown */
+        left:-60%;
+
 @media (max-width: 1199.98px) { 
     .nav-color{
         padding-bottom: 20px;
+
     }
-    .navbar-brand{
-        width: 20%;
+    /* Define a class for the active state when the dropdown is shown */
+    .navbar-nav .nav-link.active-dropdown {
+        background-color: var(--white) !important;
+        color: var(--main-color) !important;
+        transition: none; /* Remove any transition effects */
     }
+
+    /* Ensure there is no transition delay or effect for the nav-link */
+    .navbar-nav .nav-link {
+        transition: none !important;
+        padding-top:16px;
+
 }
 @media (max-width: 1399.98px) { 
     .nav-color{
         padding-bottom: 20px;
+
     }
-    .navbar-brand{
-        width: 20%;
+}
+
+/* Register / Sign-in */
+@media (max-width: 1199px) {
+.signin-signup a {
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
     }
 }
 /* Header responsive finish */
