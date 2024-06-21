@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adult Programs - Splashes</title>
+    <title>Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-xl nav-color" data-bs-theme="dark">
-            <div class="container">
+            <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="assets/Graphics/logo-small-2.png" alt="logo splashes" class="img-fluid">
+                <img src="./assets/Graphics/logo-small-2.png" alt="logo splashes" class="img-fluid">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                    <a class="nav-link" aria-current="page" href="#">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Swimming Lessons</a>
@@ -35,16 +34,55 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Locations
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Orange County</a></li>
-                      <li><a class="dropdown-item" href="#">San Gabriel Valley</a></li>
-                      <li><a class="dropdown-item" href="#">Silicon Valley</a></li>
-                      <li><a class="dropdown-item" href="#">San Diego County</a></li>
-                      <li><a class="dropdown-item" href="#">Los Angeles County</a></li>
-                      <li><a class="dropdown-item" href="#">Alameda County</a></li>
-                      <li><a class="dropdown-item" href="#">San Francisco</a></li>
-                      <li><a class="dropdown-item" href="#">Denver</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                      <div class="row">
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">Orange County</h6>
+                          <a class="dropdown-item" href="#">Anaheim Hills @ LA Fitness</a>
+                          <a class="dropdown-item" href="#">Huntington Beach</a>
+                          <a class="dropdown-item" href="#">Irvine</a>
+                          <a class="dropdown-item" href="#">Yorba Linda @ LA Fitness</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">San Gabriel Valley</h6>
+                          <a class="dropdown-item" href="#">Alhambra-Fremont @ LA Fitness</a>
+                          <a class="dropdown-item" href="#">Arcadia @ LA Fitness</a>
+                          <a class="dropdown-item" href="#">Diamond Bar @ LA Fitness</a>
+                          <a class="dropdown-item" href="#">Pasadena</a>
+                          <a class="dropdown-item" href="#">West Covina @ LA Fitness</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">Silicon Valley</h6>
+                          <a class="dropdown-item" href="#">North San Jose @ City Sports Club</a>
+                          <a class="dropdown-item" href="#">San Jose-Almaden @ City Sports Club</a>
+                          <a class="dropdown-item" href="#">San Jose-Bascom</a>
+                          <a class="dropdown-item" href="#">San Jose-Blossom Hill @ City Sports Club</a>
+                          <a class="dropdown-item" href="#">Sunnyvale @ City Sports Club</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">San Diego County</h6>
+                          <a class="dropdown-item" href="#">Carlsbad</a>
+                          <a class="dropdown-item" href="#">Poway @ LA Fitness</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">Los Angeles County</h6>
+                          <a class="dropdown-item" href="#">Culver City @ LA Fitness</a>
+                          <a class="dropdown-item" href="#">Harbor City @ LA Fitness</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">Alameda County</h6>
+                          <a class="dropdown-item" href="#">Hayward @ City Sports Club</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">San Francisco</h6>
+                          <a class="dropdown-item" href="#">San Francisco-20th Avenue @ City Sports Club</a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                          <h6 class="dropdown-header">Denver</h6>
+                          <a class="dropdown-item" href="#">Highlands Ranch</a>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link">Contact Us</a>
@@ -167,6 +205,9 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="js/script.js"></script>
+    </body>
 </html>

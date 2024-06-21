@@ -1,3 +1,4 @@
+@import url(../css/root.css);
 
 *{
     margin: 0;
@@ -6,48 +7,154 @@
 }
 
 /* overwrite bootstrap css */
+.modal-header .btn-close {
+    margin: 0;
+}
 /* Header section start */
 .btn-white{
     background-color: var(--white);
-    color: var(--main-color);
     border-radius: 20px;
     padding: 10px 20px;
     color: var(--main-button-color);
 }
+.btn-transparent{
+    background-color: transparent;
+    color: var(--main-button-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border:1px solid var(--main-button-color);
+}
+.btn-transparent:hover{
+    background-color: var(--main-button-color);
+    color: var(--white);
+    border: 0;
+}
+.modal a{
+    color: var(--main-button-color);
+}
 .nav-color{
-    background-color: #1A2E38;
+    background-color: var(--main-color);
 }
 .navbar-nav, .navbar-brand, .nav-link, .nav-link.active{
     color: #fff!important;
 }
+.nav-link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* Header section finish */
 
+
 /* Header responsive start*/
-@media (max-width: 575.98px) {
-    .nav-color{
-        padding-bottom: 20px;
-    }
-    .navbar-brand{
-        width: 50%;
+/* Navbar styles */
+.dropdown-header {
+font-weight: bold;
+margin-bottom: 5px;
+color: black;
+font-size: 15px;
+}
+
+/* Wrap Text for dropdown iteams */ 
+.dropdown-item {
+font-weight: 500;
+white-space: normal; /* Allow text to wrap */
+word-wrap: break-word; /* Break long words to prevent overflow */
+color: var(--main-button-color);
+}
+
+/* Change the hover on color to white | font weight */
+.dropdown-item:hover {
+    background-color:var(--white); /* Change background color to white on hover */
+    font-weight: 600;
+    color: var(--main-button-color);
+}
+
+/* Background color */
+.navbar-nav div[class^="col"] {
+padding-bottom: 20px;
+}
+
+/* Change Nav Bar to White */
+.navbar-nav .dropdown-menu {
+background-color: var(--white);
+padding:20px;
+margin: -2px;
+}
+
+/* Override fluid @mixin img-fluid max-width: 100%; */
+.navbar-brand img {
+max-width: 250px; /* Adjust the max-width as needed */
+height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
+
+/* Set the border color to transparent | set toggler icon to orange */
+.navbar-toggler {
+border-color: transparent;
+}
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff9700' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Set the arrow to disapear */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* Change the background color of navbar options to white on hover */
+/* .navbar-nav .nav-link:hover {
+    background-color: var(--white) !important;
+    color: var(--main-color) !important;
+} */
+
+/* Media queries for smaller screens */
+@media (min-width: 1200px) {
+    .navbar-nav .dropdown-menu {
+        width: 80vw; /* 80% of the viewport width */
+        transform: translateX(-60%); /* Center the dropdown */
+        left:-60%;
     }
 }
+
 @media (max-width: 1199.98px) { 
     .nav-color{
-        padding-bottom: 0;
+        padding-bottom: 20px;
+
     }
-    .navbar-brand{
-        width: 20%;
+    /* Define a class for the active state when the dropdown is shown */
+    .navbar-nav .nav-link.active-dropdown {
+        background-color: var(--white) !important;
+        color: var(--main-color) !important;
+        transition: none; /* Remove any transition effects */
     }
+
+    /* Ensure there is no transition delay or effect for the nav-link */
+    .navbar-nav .nav-link {
+        transition: none !important;
+        padding-top:16px;
+
+}
 }
 @media (max-width: 1399.98px) { 
     .nav-color{
-        padding-bottom: 0;
+        padding-bottom: 20px;
+
     }
-    .navbar-brand{
-        width: 20%;
+}
+
+/* Register / Sign-in */
+@media (max-width: 1199px) {
+.signin-signup a {
+    width: 90vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
     }
 }
 /* Header responsive finish */
+
 
 
 
@@ -208,4 +315,95 @@ footer {
     background: url('assets/images/footer-bg.jpeg') no-repeat center center;
     background-size: cover; /* Ensure the background image covers the entire footer */
     padding: 20px 0; /* Optional: Adjust the padding as needed */
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background: url('../assets/images/footer-bg.jpeg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the entire footer */
+    padding: 20px 0; /* Optional: Adjust the padding as needed */
+}
+
+/* Splash image */
+footer #splashes {
+    padding: 100px;
+}
+footer #splashes img{
+    width: 300px;
+}
+
+/* Page Links */
+footer .page_link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+footer .social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow icons to wrap onto multiple lines */
+}
+footer .social a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 40px; /* Adjusted width */
+    height: 40px; /* Adjusted height */
+    border-radius: 50%; /* Ensure circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; /* Optional: Add margin for spacing between icons */
+}
+
+/* Background colors for each social icon */
+footer .fa-linkedin {
+    background-color: #035f97;
+}
+
+footer .fa-instagram {
+    background-color: #656667;
+}
+
+footer .fa-twitter {
+    background-color: #26defd;
+}
+
+footer .fa-yelp {
+    background-color: #cc0b23;
+}
+
+footer .fa-facebook {
+    background-color: #72b4fc;
+}
+
+footer .fa-youtube-play {
+    background-color: #cc0b23;
+}
+
+
+/* Contact Information */
+footer .county {
+    font-weight: bold;
+    display: inline-block;
+}
+
+footer .phone {
+    display: block;
+    text-decoration: underline;
+}
+
+footer .contacts div[class^="col"] {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Logo List */
+footer #logos {
+    list-style-type: none;
 }
