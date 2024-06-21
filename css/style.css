@@ -114,6 +114,8 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
         width: 80vw; /* 80% of the viewport width */
         transform: translateX(-60%); /* Center the dropdown */
         left:-60%;
+    }
+}
 
 @media (max-width: 1199.98px) { 
     .nav-color{
@@ -132,6 +134,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
         transition: none !important;
         padding-top:16px;
 
+}
 }
 @media (max-width: 1399.98px) { 
     .nav-color{
@@ -389,4 +392,3 @@ footer #logos {
         display: none;
     }
 }
-
