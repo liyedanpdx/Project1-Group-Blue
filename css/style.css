@@ -7,12 +7,29 @@
 }
 
 /* overwrite bootstrap css */
+.modal-header .btn-close {
+    margin: 0;
+}
 /* Header section start */
 .btn-white{
     background-color: var(--white);
-    color: var(--main-color);
     border-radius: 20px;
     padding: 10px 20px;
+    color: var(--main-button-color);
+}
+.btn-transparent{
+    background-color: transparent;
+    color: var(--main-button-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    border:1px solid var(--main-button-color);
+}
+.btn-transparent:hover{
+    background-color: var(--main-button-color);
+    color: var(--white);
+    border: 0;
+}
+.modal a{
     color: var(--main-button-color);
 }
 .nav-color{
@@ -71,6 +88,7 @@ max-width: 250px; /* Adjust the max-width as needed */
 height: auto; /* Ensure the image maintains its aspect ratio */
 }
 
+
 /* Set the border color to transparent | set toggler icon to orange */
 .navbar-toggler {
 border-color: transparent;
@@ -96,6 +114,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
         width: 80vw; /* 80% of the viewport width */
         transform: translateX(-60%); /* Center the dropdown */
         left:-60%;
+
+@media (max-width: 1199.98px) { 
+    .nav-color{
+        padding-bottom: 20px;
+
     }
     /* Define a class for the active state when the dropdown is shown */
     .navbar-nav .nav-link.active-dropdown {
@@ -103,10 +126,17 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
         color: var(--main-color) !important;
         transition: none; /* Remove any transition effects */
     }
+
     /* Ensure there is no transition delay or effect for the nav-link */
     .navbar-nav .nav-link {
         transition: none !important;
         padding-top:16px;
+
+}
+@media (max-width: 1399.98px) { 
+    .nav-color{
+        padding-bottom: 20px;
+
     }
 }
 
@@ -121,6 +151,9 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     }
 }
 /* Header responsive finish */
+
+
+
 
 
 /* Footer */
@@ -212,3 +245,148 @@ footer .contacts div[class^="col"] {
 footer #logos {
     list-style-type: none;
 }
+
+
+/* Swimming Lessons Part Start */
+.swimmng-les-banner-part{
+    background-image: url(../assets/images/which-lesson-is-best.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swimmng-les-banner-part h1{
+    font-family: Bodoni Moda;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white);
+    padding: 200px 0;
+}
+
+@media (max-width: 991.98px) {
+    .swimmng-les-banner-part h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .swimmng-les-banner-part h1{
+        font-size: 30px;
+    }
+}
+.swimming-les-main-header h2{
+    font-family: Bodoni Moda;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.swimming-les-main-content{
+    font-family: open-sans-regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.swimming-les-main-content p a{
+    text-decoration-color: var(--main-button-color);
+    color: var(--main-button-color);
+}
+
+/* Swimming Lessons Part End */
+
+/* Swimming Program part start */
+.swimmng-pro-banner-part{
+    background-image: url(../assets/images//summer-swim-camps.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swimmng-pro-banner-part h1{
+    font-family: Bodoni Moda;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white);
+    padding: 200px 0;
+}
+@media (max-width: 991.98px) {
+    .swimmng-pro-banner-part h1{
+        font-size: 50px;
+    }
+}
+@media (max-width: 575.98px) {
+    .swimmng-pro-banner-part h1{
+        font-size: 30px;
+    }
+}
+
+.swimming-pro-main-header h2{
+    font-family: Bodoni Moda;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-color);
+}
+.swimming-pro-main-content{
+    font-family: open-sans-regular;
+    font-size: 16px;
+    font-weight: 400;
+}
+.swimming-pro-main-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+.swimming-pro-main-content ul li a{
+    text-decoration-color: var(--main-button-color);
+    color: var(--main-button-color);
+}
+/* Swimming Program part end */
+
+/* modal css */
+
+.modal-section{
+    position: relative;
+}
+.modal-img{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    z-index: 1000;
+    width: 90px;
+}
+
+.modal-dialog {
+    top: 20%;
+}
+
+@media (max-width: 1440px) {
+    .modal-img{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        z-index: 1000;
+        width: 90px;
+    }
+}
+@media (max-width: 1024px) {
+    .modal-img{
+        position: absolute;
+        top: 20%;
+        left: 22%;
+        z-index: 1000;
+        width: 90px;
+    }
+}
+@media (max-width: 768px) {
+    .modal-img{
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        z-index: 1000;
+        width: 90px;
+    }
+}
+@media (max-width: 575.98px) {
+    .modal-img{
+        display: none;
+    }
+}
+
