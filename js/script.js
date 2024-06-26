@@ -1,3 +1,4 @@
+
 // Footer: Dropdown button
 document.addEventListener('DOMContentLoaded', function() {
     var dropdownLinks = document.querySelectorAll('.nav-link.dropdown-toggle');
@@ -31,4 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         form.classList.add('was-validated')
       }, false)
     })
-  })()
+
+
+
