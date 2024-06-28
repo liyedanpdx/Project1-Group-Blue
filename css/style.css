@@ -831,7 +831,7 @@ margin: 1.5vw;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-#adult-program a {
+#adult-program main a {
     color: var(--main-button-color);
 }
 
