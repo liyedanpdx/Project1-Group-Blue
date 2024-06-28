@@ -285,10 +285,10 @@ footer #logos {
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Icons */
+/* Contact  */
 .contact-icons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -318,6 +318,7 @@ footer #logos {
     margin-top: 10px;
     font-size: 1rem;
     color: #1A2E38;
+
 }
 
 /* Responsive Contact Icons */
@@ -436,6 +437,7 @@ footer #logos {
     background-image: url(../assets/images/which-lesson-is-best.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .swimmng-les-banner-part h1{
@@ -490,6 +492,7 @@ footer #logos {
     text-align: center;
     color: var(--white);
     padding: 200px 0;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 991.98px) {
     .swimmng-pro-banner-part h1{
@@ -689,11 +692,12 @@ footer #logos {
 /* Contact Page CSS */
 /* font size */
 #contact main h1{
-padding-top: 7vw;
+padding-top: 12vw;
 font-size: 4.5vw;
 font-family: Bodoni Moda;
 font-weight: bold;
 padding-bottom: 2vw;
+text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 #contact main #about-us-hero h1{
     padding-top: 20vw;
@@ -714,26 +718,28 @@ padding-bottom: 2vw;
 }
 
 /* contacts_icon */
-#contacts_icon img {
+#contact #contacts_icon p{
+    padding: 10vw 3vw;
+}
+#contact #contacts_icon img {
 width: 16vw; /* Adjust the width as per your design */
 height: auto; /* Maintain aspect ratio */
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
 margin: 1.5vw;
 }
-#contacts_icon {
-text-align: top; /* Center align all content inside the awards-we-won container */
-margin-bottom: 10vw;
+#contact #contacts_icon {
+    text-align: top; /* Center align all content inside the awards-we-won container */
+    margin-bottom: 10vw;
 }
 #contact .icon{
     display: inline-block;
     vertical-align: top;
-
 }           
 #contact .icon a{
-    display: block;
-    word-wrap: break-word;
-    width:16vw;
+    display: inline-block; /* Change display to inline-block */
+    width: 100%; /* Make the <a> tag fill the width of its parent .icon */
     font-size: 1.5vw;
+    text-align: center; /* Center align text within the link */
 } 
 #contact #contacts_icon .row{
     text-align: center;
@@ -756,6 +762,7 @@ margin-bottom: 10vw;
     text-align: center;
     color: var(--white);
     font-weight: bold;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 #home .background-image {
     background-image: url('../assets/images/home.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
@@ -951,6 +958,27 @@ margin-bottom: 10vw;
     font-size: 3vw;
     }
 }
+
 /* Home Page CSS End */
+#adult-program a {
+    color: var(--main-button-color);
+}
 
+#adult-program h3{
+    font-family: Bodoni Moda;
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 30px;
+}
 
+#adult-program h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+#adult-program h2{
+    font-size: 3vw;
+    font-family: Bodoni Moda;
+    color: var(--white);
+    font-weight: bold;
+    padding-bottom: 2vw;
+}
