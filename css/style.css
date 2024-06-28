@@ -102,12 +102,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     display: none;
 }
 
-/* Change the background color of navbar options to white on hover */
-/* .navbar-nav .nav-link:hover {
-    background-color: var(--white) !important;
-    color: var(--main-color) !important;
-} */
-
 /* Show the dropdown on hover */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -172,79 +166,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 /* Header responsive finish */
 
-
-
-
-
-
-/* Footer */
-footer {
-    width: 100%;
-    background: url('assets/images/footer-bg.jpeg') no-repeat center center;
-    background-size: cover; /* Ensure the background image covers the entire footer */
-    padding: 20px 0; /* Optional: Adjust the padding as needed */
-}
-
-/* Splash image */
-footer #splashes {
-    padding: 100px;
-}
-footer #splashes img{
-    width: 300px;
-}
-
-/* Page Links */
-footer .page_link {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-/* Social Icons */
-footer .social {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow icons to wrap onto multiple lines */
-}
-footer .social a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    width: 40px; /* Adjusted width */
-    height: 40px; /* Adjusted height */
-    border-radius: 50%; /* Ensure circular shape */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px; /* Optional: Add margin for spacing between icons */
-}
-
-/* Background colors for each social icon */
-footer .fa-linkedin {
-    background-color: #035f97;
-}
-
-footer .fa-instagram {
-    background-color: #656667;
-}
-
-footer .fa-twitter {
-    background-color: #26defd;
-}
-
-footer .fa-yelp {
-    background-color: #cc0b23;
-}
-
-footer .fa-facebook {
-    background-color: #72b4fc;
-}
-
-footer .fa-youtube-play {
-    background-color: #cc0b23;
-}
-
-/* Contact Information */
+/* Footer Start */
 footer .county {
     font-weight: bold;
     display: inline-block;
@@ -266,79 +188,6 @@ footer #logos {
     list-style-type: none;
 }
 
-/* Hero Image */
-.hero-image {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color: white;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Contact  */
-.contact-icons-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.contact-icon {
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid #E4EAEA;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 100%;
-}
-
-.contact-icon img {
-    width: 100px;
-    height: 100px;
-}
-
-.contact-icon p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #1A2E38;
-
-}
-
-/* Responsive Contact Icons */
-@media (max-width: 576px) {
-    .contact-icons-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    background: url('assets/images/footer-bg.jpeg') no-repeat center center;
-    background-size: cover; /* Ensure the background image covers the entire footer */
-    padding: 20px 0; /* Optional: Adjust the padding as needed */
-}
-
-
-
-/* Footer */
 footer {
     width: 100%;
     background: url('../assets/images/footer-bg.jpeg') no-repeat center center;
@@ -426,10 +275,8 @@ footer .contacts div[class^="col"] {
 /* Logo List */
 footer #logos {
     list-style-type: none;
-
 }
-
-
+/* Footer End */
 
 
 /* Swimming Lessons Part Start */
@@ -527,8 +374,7 @@ footer #logos {
 }
 /* Swimming Program part end */
 
-/* modal css */
-
+/* Modal css start */
 .modal-section{
     position: relative;
 }
@@ -576,10 +422,10 @@ footer #logos {
         display: none;
     }
 }
+/* Modal css end */
 
 
-
-/* awards-we-won */
+/* Awards-we-won start */
 #awards-we-won img {
     width: 110px; /* Adjust the width as per your design */
     height: auto; /* Maintain aspect ratio */
@@ -595,7 +441,8 @@ footer #logos {
         padding-bottom: 2vw;
         margin: 7vw auto;
     }
-/* awards-we-won end */
+
+/* Awards-we-won end */
 
 
 /* About Page CSS */
@@ -960,6 +807,30 @@ margin: 1.5vw;
 }
 
 /* Home Page CSS End */
+
+/* Adult Page CSS */
+/* Hero Image */
+#adult-program .hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#adult-program .hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+#adult-program .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
 #adult-program a {
     color: var(--main-button-color);
 }
@@ -982,3 +853,4 @@ margin: 1.5vw;
     font-weight: bold;
     padding-bottom: 2vw;
 }
+/* Adult Page CSS End */
