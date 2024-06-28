@@ -462,6 +462,7 @@ footer #logos {
 #about main a{
     font-size: 2vw;
     padding-top: 20vw;
+    color: var(--main-button-color);
 }
 #about main #about-us-hero h1{
     padding-top: 20vw;
