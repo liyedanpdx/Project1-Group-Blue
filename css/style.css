@@ -108,6 +108,12 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     color: var(--main-color) !important;
 } */
 
+/* Show the dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Override Bootstrap's default margin */
+}
+
 /* Media queries for smaller screens */
 @media (min-width: 1200px) {
     .navbar-nav .dropdown-menu {
@@ -117,7 +123,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     }
 }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.99px) { 
     .nav-color{
         padding-bottom: 20px;
 
@@ -151,6 +157,17 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10px;
+    }
+}
+/* transparent feature when window xl */
+@media (min-width: 1200px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(38, 41, 61, 0.7); /* Navbar background color with opacity */
+        z-index: 1000; /* Ensure the navbar is above other content */
     }
 }
 /* Header responsive finish */
@@ -411,7 +428,7 @@ footer #logos {
 
 }
 
-}
+
 
 
 /* Swimming Lessons Part Start */
@@ -556,4 +573,384 @@ footer #logos {
         display: none;
     }
 }
+
+
+
+/* awards-we-won */
+#awards-we-won img {
+    width: 110px; /* Adjust the width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    }
+    #awards-we-won {
+    text-align: center; /* Center align all content inside the awards-we-won container */
+    margin-bottom: 10vw;
+    }
+    #awards-we-won h1{
+        font-size: 3.8vw;
+        font-family: Bodoni Moda;
+        font-weight: bold;
+        padding-bottom: 2vw;
+        margin: 7vw auto;
+    }
+/* awards-we-won end */
+
+
+/* About Page CSS */
+/* font size */
+#about main h1{
+    padding-top: 3vw;
+    font-size: 4.5vw;
+    font-family: Bodoni Moda;
+    font-weight: bold;
+    padding-bottom: 2vw;
+}
+#about main p{
+    font-size: 2vw;
+    padding-bottom: 2vw;
+    color: var(--main-color);
+    }
+#about main a{
+    font-size: 2vw;
+    padding-top: 20vw;
+}
+#about main #about-us-hero h1{
+    padding-top: 20vw;
+    color: var(--white);
+    }
+#about main #about-our-philosophy h1,
+#about main #about-we-do-a-pretty-good-job h1{
+    color: var(--main-color);
+    }
+
+/* border limit */
+#about main #about-our-philosophy div{
+    margin: auto 100px;
+    text-align: center;
+}
+#about main #about-we-do-a-pretty-good-job div{
+    margin: auto 100px;
+    text-align: center;
+}
+
+
+@media (min-width: 1200px){
+    #about main p,
+    #about main a{
+        font-size: 1.3vw;
+        }
+    #about main #about-our-philosophy div{
+        margin: auto 300px;
+        text-align: center;
+    }
+    #about main #about-we-do-a-pretty-good-job div{
+        margin: auto 300px;
+        text-align: center;
+    }
+}
+
+/* images setting */
+#about #about-us-hero{
+    background-image: url('../assets/images/about-us-hero.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: top center;
+    background-size: cover;
+    height:60vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+}
+#about #about-our-philosophy{
+    background-image: url('../assets/images/about-our-philosophy-bg.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: bottom center;
+    background-size: cover;
+    height:40vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+}
+#about #about-we-do-a-pretty-good-job{
+    background-image: url('../assets/images/about-we-do-a-pretty-good-job-bg.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: top center;
+    background-size: cover;
+    height:38vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+}
+/* About Page CSS End */
+
+
+
+/* Contact Page CSS */
+/* font size */
+#contact main h1{
+padding-top: 7vw;
+font-size: 4.5vw;
+font-family: Bodoni Moda;
+font-weight: bold;
+padding-bottom: 2vw;
+}
+#contact main #about-us-hero h1{
+    padding-top: 20vw;
+    color: var(--white);
+}
+
+/* images setting */
+#contact #contact-hero{
+    background-image: url('../assets/images/contact-hero.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: top center;
+    background-size: cover;
+    height:40vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+}
+
+/* contacts_icon */
+#contacts_icon img {
+width: 16vw; /* Adjust the width as per your design */
+height: auto; /* Maintain aspect ratio */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow */
+margin: 1.5vw;
+}
+#contacts_icon {
+text-align: top; /* Center align all content inside the awards-we-won container */
+margin-bottom: 10vw;
+}
+#contact .icon{
+    display: inline-block;
+    vertical-align: top;
+
+}           
+#contact .icon a{
+    display: block;
+    word-wrap: break-word;
+    width:16vw;
+    font-size: 1.5vw;
+} 
+#contact #contacts_icon .row{
+    text-align: center;
+}
+#contact #contacts_icon p{
+    text-align: center;
+    font-size: 1.5vw;
+    margin: auto 80px;
+}
+/* Contact Page CSS End */
+
+
+
+
+/* Home Page CSS */
+/* Define the font family */
+#home main #home_slogan h1 {
+    font-size: 4vw;
+    font-family: Bodoni Moda;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+}
+#home .background-image {
+    background-image: url('../assets/images/home.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: top center;
+    background-size: contain;
+    height:60vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+}
+#home .btn-white{
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+}
+#home #home_button2 a{
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    margin:1px;
+    font-size: 15px;
+}
+#home #home_slogan{
+    padding-top: 12vw;
+    margin-bottom: 30px;
+}
+
+/* Media query for viewport width above 1440px */
+@media (min-width: 373px) {
+    #home .background-image {
+        background-size: cover; /* Cover the background area */
+    }
+}
+@media (max-width: 372px) {
+    #home .background-image {
+        background-size: contain; /* Cover the background area */
+        margin-bottom: 0px;
+    }
+}
+
+/*ads-banner*/
+#home #ads-banner img{
+    display: block;
+    width: 80vw;
+    margin: 2vw auto;
+}
+
+/*hands-on-teaching*/
+/* button */
+.btn-blue {
+    background-color: var(--main-button-color);
+    color: var(--main-color);
+    border-radius: 5vw;
+    padding: 1vw 2vw;
+    color: var(--white);
+    font-weight: bold;
+}
+/* general text and color define */
+#home #hands-on-teaching{
+    color: var(--main-color);
+    text-align: left;
+}
+/* font size */
+#home #hands-on-teaching h1{
+    font-size: 3vw;
+    font-family: Bodoni Moda;
+    color: var(--main-color);
+    font-weight: bold;
+    padding-bottom: 2vw;
+}
+#home #hands-on-teaching h3{
+    font-weight: bold;
+}
+#home #hands-on-teaching ul{
+    padding-bottom: 2vw;
+    text-align: left;
+}
+#home #hands-on-teaching ul a{
+    color: var(--main-color);
+}
+#home #hands-on-teaching .register-now {
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    #home #hands-on-teaching #words-container{
+    width: 90vw;
+    padding-left: 10vw;
+    padding-top: 7vw;
+    padding-bottom: 10vw;
+    }
+    #home #hands-on-teaching,
+    #home #hands-on-teaching h3{
+    font-size: 2.5vw;
+    }
+}
+@media (min-width: 1200px) {
+    #hands-on-teaching{
+    background-image: url('../assets/images/home-hands-on-teaching.jpeg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-position: top center;
+    background-size: 185%;
+    height:60vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+    color: var(--white); /* Text color against background */
+    }
+    #home #hands-on-teaching #words-container{
+    width: 40vw;
+    padding-left: 10vw;
+    padding-top: 7vw;
+    padding-bottom: 10vw;
+    }
+    #home #hands-on-teaching,
+    #home #hands-on-teaching h3{
+    font-size: 1vw;
+    }
+}
+
+/* our-location */
+#home #our-location {
+    background-position: bottom center;
+    background-size: cover;
+    height:50vw;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center align text */
+}
+#home #our-location h1{
+    font-size: 3vw;
+    font-family: Bodoni Moda;
+    font-weight: bold;
+    padding-bottom: 2vw;
+}
+#home #our-location h3{
+    font-family: Bodoni Moda;
+    font-weight: bold;
+    font-size: 2vw;
+    padding-bottom: 2vw;
+}
+#home #our-location p{
+    font-size: 1vw;
+    padding-bottom: 2vw;
+}
+
+@media (min-width: 1200px) {
+    #home #our-location {
+    background-image: url('../assets/images/home-our-locations-bg.jpeg'); 
+    position: relative;
+    color: var(--white);
+    }
+    #home #words-container2{
+    color: var(--white);
+    width: 35vw;
+    padding-left: 10vw;
+    padding-top: 7vw;
+    padding-bottom: 10vw;
+    }
+    #home #location-map img{
+    width:40%;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    }
+}
+@media (max-width: 1199px) {
+    #home #our-location {
+    color: var(--white); 
+    background-image: url('../assets/images/home-our-locations-bg.jpeg'); 
+    }
+    #home #words-container2{
+    color: var(--white); 
+    width: 90vw;
+    margin: auto 5vw;
+    padding-top: 10vw;
+    
+    }
+    #home #location-map img {
+    display: none;
+    }
+    /* font size */
+    #home #our-location p{
+    font-size: 2.5vw;
+    }
+    #home #our-location h3{
+    font-size: 4vw;
+    };
+    #home #our-location h1{
+    font-size: 3vw;
+    }
+}
+/* Home Page CSS End */
+
 
